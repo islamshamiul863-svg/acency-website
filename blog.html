@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agency - Blog</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 70px;
+    }
+
+    .page-header {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1499750310107-5fef28a66643') center/cover no-repeat;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .blog-card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .sidebar-box {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Agency</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<section class="page-header">
+  <div data-aos="fade-up">
+    <h1>Our Blog</h1>
+    <p>Latest insights and updates</p>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Blog Posts -->
+      <div class="col-lg-8">
+        <div class="row g-4">
+
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="card blog-card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" class="card-img-top" />
+              <div class="card-body">
+                <h5>Modern Web Design Trends</h5>
+                <p>Explore the latest trends in UI/UX design for 2026.</p>
+                <a href="#" class="btn btn-sm btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="card blog-card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" class="card-img-top" />
+              <div class="card-body">
+                <h5>SEO Strategies That Work</h5>
+                <p>Boost your website ranking with proven SEO techniques.</p>
+                <a href="#" class="btn btn-sm btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="card blog-card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" class="card-img-top" />
+              <div class="card-body">
+                <h5>Future of Web Development</h5>
+                <p>What technologies will dominate the next decade?</p>
+                <a href="#" class="btn btn-sm btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="card blog-card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4" class="card-img-top" />
+              <div class="card-body">
+                <h5>Digital Marketing Tips</h5>
+                <p>Grow your business with smart marketing strategies.</p>
+                <a href="#" class="btn btn-sm btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4 mt-4 mt-lg-0">
+
+        <div class="sidebar-box mb-4" data-aos="fade-left">
+          <h5>Search</h5>
+          <input type="text" class="form-control" placeholder="Search blog...">
+        </div>
+
+        <div class="sidebar-box mb-4" data-aos="fade-left" data-aos-delay="150">
+          <h5>Categories</h5>
+          <ul class="list-unstyled">
+            <li>Web Design</li>
+            <li>Development</li>
+            <li>Marketing</li>
+            <li>Business</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box" data-aos="fade-left" data-aos-delay="300">
+          <h5>About Blog</h5>
+          <p>We share insights, tutorials, and updates about web design and digital marketing.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  <p class="mb-0">© 2026 Agency. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>

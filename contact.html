@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agency - Contact</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 70px;
+    }
+
+    .page-header {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1521791055366-0d553872125f') center/cover no-repeat;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .contact-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 10px;
+      min-height: 350px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Agency</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<section class="page-header">
+  <div data-aos="fade-up">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Contact Form -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="contact-box">
+          <h3 class="mb-3">Get in Touch</h3>
+
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="contact-box h-100">
+          <h3 class="mb-3">Our Location</h3>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9027!2d90.3490!3d23.8103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70b6c8c1b0f%3A0x2e7a5c9b6f3b1b2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v0000000000"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+
+          <div class="mt-3">
+            <p><strong>Address:</strong> Rangpur, Bangladesh</p>
+            <p><strong>Email:</strong> info@agency.com</p>
+            <p><strong>Phone:</strong> +880 1234 567890</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  <p class="mb-0">© 2026 Agency. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
